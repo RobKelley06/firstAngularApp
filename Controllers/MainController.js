@@ -1,7 +1,7 @@
 
 (function(){
   
-  var app = angular.module("githubViewer");
+  var app = angular.module("firstAngularApp");
   
   var MainController = function($scope, $interval, $location) {
   

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html ng-app="githubViewer">
+<html ng-app="firstAngularApp">
 
   <head>
     <script data-require="angular.js@" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
     <script data-require="angular-route@*" data-semver="1.2.14" src="https://code.angularjs.org/1.2.14/angular-route.js"></script>
     <link rel="stylesheet" href="CSS/style.css" />
     <script src="JS/app.js"></script>
-    <script src="Controllers/MainController.js"></script>
-    <script src="Controllers/UserController.js"></script>
-    <script src="Controllers/RepoController.js"></script>
-    <script src="JS/github.js"></script>
+    <script src="Controllers/LoginController.js"></script>
+    <script src="Controllers/CreateAccountController.js"></script>
+
   </head>
 
   <body>
-    <h1>Github Viewer</h1>
+  	<div ng-include="'header.html'"></div>
     <div ng-view></div>
+  	<div ng-include="'footer.html'"></div>
   </body>
 
 

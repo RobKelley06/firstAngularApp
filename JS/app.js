@@ -1,21 +1,25 @@
 (function(){
-  var app = angular.module("githubViewer", ["ngRoute"]);
+  var app = angular.module("firstAngularApp", ["ngRoute"]);
   
   app.config(function($routeProvider){
     $routeProvider
-      .when("/main", {
-        templateUrl: "main.html",
-        controller: "MainController"
+      .when("/login", {
+        templateUrl: "login.html",
+        controller: "LoginController"
       })
-      .when("/user/:username", {
-        templateUrl: "user.html",
-        controller: "UserController"
+      .when("/createaccount", {
+         templateUrl: "createaccount.html",
+         controller: "CreateAccountController"
       })
-      .when("/repo/:username/:reponame", {
-        templateUrl: "repo.html",
-        controller: "RepoController"
+      .when("/createaccount/:response", {
+          templateUrl: "createaccount.html",
+          controller: "CreateAccountController"
       })
-      .otherwise({redirectTo:"/main"});
+      .when("/accountcreated", {
+          templateUrl: "accountcreated.html",
+          controller: "CreateAccountController"
+      })
+      .otherwise({redirectTo:"/login"});
   });
   
 }());

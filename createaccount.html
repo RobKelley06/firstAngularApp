@@ -1,0 +1,12 @@
+
+<div style="color:red">{{ response }}</div>
+<div>
+  <form name="create" ng-submit="createAccount(username, password, cpassword, email, cemail)">
+	    <input type="text" required="" placeholder="Username" ng-model="username" /><br>
+	    <input type="text" required="" placeholder="Password" ng-model="password" />
+	    <input type="text" required="" placeholder="Confirm Password" ng-model="cpassword" /><br>
+	    <input type="text" required="" placeholder="Email" ng-model="email" />
+	    <input type="text" required="" placeholder="Confirm Email" ng-model="cemail" />
+	    <input type="submit" value="Create Account" />
+  </form>
+</div>
