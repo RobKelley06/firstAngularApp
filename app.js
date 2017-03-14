@@ -3,28 +3,28 @@
   app.config(function($routeProvider){
     $routeProvider
       .when("/login", {
-        templateUrl: "login.html",
+        templateUrl: "/Templates/login.html",
         controller: "LoginController"
       })
       .when("/home", {
-    	templateUrl: "home.html",
+    	templateUrl: "/Templates/home.html",
     	controller: "HomeController"
       })
       
       .when("/login/:response", {
-          templateUrl: "login.html",
+          templateUrl: "/Templates/login.html",
           controller: "LoginController"
         })
       .when("/createaccount", {
-         templateUrl: "createaccount.html",
+         templateUrl: "/Templates/createaccount.html",
          controller: "CreateAccountController"
       })
       .when("/createaccount/:response", {
-          templateUrl: "createaccount.html",
+          templateUrl: "/Templates/createaccount.html",
           controller: "CreateAccountController"
       })
       .when("/accountcreated", {
-          templateUrl: "accountcreated.html",
+          templateUrl: "/Templates/accountcreated.html",
           controller: "CreateAccountController"
       })
       .otherwise({redirectTo:"/login"});
