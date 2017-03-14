@@ -2,7 +2,7 @@
 
 	var app = angular.module("firstAngularApp");
 
-	var LoginController = function($scope, $http, $location, $routeParams, $cookieStore) {
+	var LoginController = function($scope, $http, $location, $routeParams, $cookies) {
 		
 		$scope.response = $routeParams.response;
 		
@@ -16,7 +16,7 @@
 							$location.path("/login/"+response.data);
 						}
 						else {
-							$cookieStore.put("username",username);
+							$cookies.put("username",username);
 							$location.path("/home");							
 						}
 						return response.data;
